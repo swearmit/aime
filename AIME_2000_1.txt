@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>AoPS = {
+			start_time : new Date().getTime()
+		};</script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1">
+
+
+		<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+		<title>Art of Problem Solving</title>
+
+
+		<link rel="stylesheet" href="/assets/css/main.css?__v__=1">
+
+
+		<script>
+		if (!window.console) console = {log: function() {}, dir: function() {}};
+		$$ = function( selector ) { return document.getElementById( selector ); }
+		</script>
+		<script src="//assets.artofproblemsolving.com/js/jquery.min.js"></script>
+
+		<meta charset="UTF-8"/>
+<title>2000 AIME I Problems - AoPSWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"2000_AIME_I_Problems","wgTitle":"2000 AIME I Problems","wgCurRevisionId":69481,"wgRevisionId":69481,"wgArticleId":2748,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"2000_AIME_I_Problems","wgRelevantArticleId":2748,"wgRequestId":"b0b5d0492db6ba852d17ab29","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.aops":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1iqotlx",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);});</script>
+<link rel="stylesheet" href="//wiki-5.artofproblemsolving.com/wiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.aops&amp;only=styles&amp;skin=aops"/>
+<script async="" src="//wiki-5.artofproblemsolving.com/wiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=aops"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="//wiki-5.artofproblemsolving.com/wiki/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=aops"/>
+<meta name="generator" content="MediaWiki 1.29.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="AoPSWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//artofproblemsolving.com/wiki/api.php?action=rsd"/>
+<link rel="alternate" type="application/atom+xml" title="AoPSWiki Atom feed" href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+
+	</head>
+		<body class="production mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-2000_AIME_I_Problems rootpage-2000_AIME_I_Problems skin-aops action-view resources">
+		<div id="page-wrapper">
+			<!-- search:off -->
+
+			<div id="header-wrapper" class="no-select">
+				<div id="header">
+				
+					<!-- The blue bar at top -->
+					<div id="top-bar" class="bluebar-wrapper">
+						<div class="bluebar">
+							<div id="header-popin">
+								<a href="/company/staff">About</a>
+								<a href="/company/careers">Careers</a>
+								<a href="/contact">Contact</a>
+							</div>
+							<a href="/" class="mobile-title"></a>
+														<div class="item no-select" style="margin-right:6px;color:white">
+								<a style="color:white" href="/user/login?redirect=/wiki/index.php?title=2000_AIME_I_Problems">Log In / Join</a>
+							</div>
+
+							
+							
+														
+
+						</div>
+
+					</div>
+
+
+					<div id="mobile-menu-items" class="clearfix">
+						<a href="/school" class="menu-item school-background-color">School</a>
+						<a href="/store" class="menu-item store-background-color">Store</a>
+						<a data-cmty href="/community" class="menu-item community-background-color">Community</a>
+						<a href="/resources" class="menu-item resources-background-color">Resources</a>
+					</div>
+
+
+					<!-- The white area where main menu options appear -->
+					<div class="menubar-wrapper">
+						<div class="menubar">
+							<a id="main-logo" class="banner" href="http://aops.com"></a>
+
+							<div style="margin-left:230px;vertical-align:bottom;">
+
+								<div class="header-menu school"><span><a href="/school"></a></span><div class="label school-background-color"></div>
+									<div class="pointer"></div>
+									<div id="school-dropdown" class="dropdown-menu">
+																														<a href="/school/how-school-works">How Classes Work</a>
+										<a href="/school/catalog">Course Catalog</a>
+										<a href="/school/schedule">Class Schedule</a>
+										<a href="/school/recommendations">Recommendations</a>
+										<a href="/school/woot">WOOT Courses</a>
+										<a href="/school/mathjams">Math Jams</a>
+																														
+									</div>
+								</div>
+
+								<div class="header-menu store"><span><a href="/store"></a></span><div class="label store-background-color"></div>
+									<div class="pointer"></div>
+									<div id="store-dropdown" class="dropdown-menu">
+																				<a href="/store/list/aops-curriculum">AoPS Curriculum</a>
+										<a href="/store/list/beast-academy">Beast Academy</a>
+										<a href="/store/online">Online Books</a>
+										<a href="/store/recommendations">Recommendations</a>
+										<a href="/store/list/other-products">Other Books &amp; Gear</a>
+										<a href="/store/list/all-products">All Products</a>
+										<a href="/store/gift-certificates">Gift Certificates</a>
+																			</div>
+								</div>
+
+								<div class="header-menu community"><span><a data-cmty href="/community"></a></span><div class="label community-background-color"></div>
+									<div class="pointer"></div>
+									<div id="community-dropdown" class="dropdown-menu">
+																				<a data-cmty href="/community">Forums</a>
+										<a data-cmty href="/community/c13_contests">Contests</a>
+										<a data-cmty href="/community/search">Search</a>
+										<a data-cmty href="/community/faq">Help</a>
+																													</div>
+								</div>
+
+								<div class="header-menu resources"><span><a href="/resources"></a></span><div class="label resources-background-color"></div>
+									<div class="pointer"></div>
+									<div id="resources-dropdown" class="dropdown-menu">
+										<a href="/alcumus">Alcumus</a>
+										<a href="/polymath/mitprimes2016">MIT PRIMES/AoPS CrowdMath</a>
+										<a href="/videos">Videos</a>
+										<a href="/ftw">For the Win!</a>
+										<a href="/mathcounts_trainer">MATHCOUNTS Trainer</a>
+										<a href="/reaper">Reaper</a>
+										<a href="/greedcontrol">Greed Control</a>
+										<a href="/articles">Articles</a>
+										<a href="/wiki">AoPS Wiki</a>
+										<a href="/texer">TeXeR</a>
+																			</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="extra">
+						<div style="height:5px;background-color:#e2e2e2"></div>
+						<div class="extra-bottom"></div>
+					</div>
+				</div> 
+
+				<noscript><div class="infobar">JavaScript is not enabled. JavaScript is required to fully utilize the site.</div></noscript>
+
+
+				<div id="breadcrumbs-wrapper">
+					<div id="submenu-icon"><i class="aops-font bars"></i></div>
+					<div id="breadcrumbs">
+												<div class="title-wrapper"><div class="title"><a href="/wiki">AoPS Wiki</a></div></div>
+												<div class="crumb-wrapper">
+																							<span class="crumb crumb-1">
+																	<a href="/resources">Resources</a>
+																</span>
+																								<i class="aops-font aops-angle-double-right"></i>
+																<span class="crumb crumb-2">
+																	<a href="/wiki">Aops Wiki</a>
+																</span>
+																								<i class="aops-font aops-angle-double-right"></i>
+																<span class="crumb crumb-3">
+																	2000 AIME I Problems																</span>
+													</div>
+					</div>
+				</div>
+			</div>
+			<!-- /search:off -->
+
+<div id="main-content" class="left-navigation">
+	<div id="side-column-wrapper">
+		<div id="side-column">
+						<div id="content-actions" class="menu open">
+				<div class="submenu">
+					<h1>Page</h1>
+					<div class="submenu-wrapper">
+						<span id="ca-nstab-main" class="selected"><a href="/wiki/index.php?title=2000_AIME_I_Problems" title="View the content page " accesskey="c">Article</a></span><span id="ca-talk" class="new"><a href="/wiki/index.php?title=Talk:2000_AIME_I_Problems&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page " accesskey="t">Discussion</a></span><span id="ca-viewsource"><a href="/wiki/index.php?title=2000_AIME_I_Problems&amp;action=edit" title="This page is protected.&#10;You can view its source " accesskey="e">View source</a></span><span id="ca-history"><a href="/wiki/index.php?title=2000_AIME_I_Problems&amp;action=history" title="Past revisions of this page " accesskey="h">History</a></span>					</div>
+				</div>
+			</div>
+			<div id="toolbox" class="menu open">
+				<div class="submenu">
+					<h1>Toolbox</h1>
+					<div class="submenu-wrapper">
+						<span id="n-recentchanges"><a href="/wiki/index.php?title=Special:RecentChanges" title="A list of recent changes in the wiki " accesskey="r">Recent changes</a></span><span id="n-randompage"><a href="/wiki/index.php?title=Special:Random" title="Load a random page " accesskey="x">Random page</a></span><span id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></span><span id="t-whatlinkshere"><a href="/wiki/index.php?title=Special:WhatLinksHere/2000_AIME_I_Problems" title="A list of all wiki pages that link here " accesskey="j">What links here</a></span><span id="t-specialpages"><a href="/wiki/index.php?title=Special:SpecialPages" title="A list of all special pages " accesskey="q">Special pages</a></span>					</div>
+				</div>
+			</div>
+						
+			<div id="search" class="menu open">
+				<h1>Search</h1>
+				<div class="submenu-wrapper" style="margin-bottom:5px;">
+					<form action="/wiki/index.php" id="searchform" class="mw-search">
+						<input type="hidden" name="title" value="Special:Search">
+						<input type="search" name="search" placeholder="Search" value="" accesskey="f" id="searchInput">
+						<div style="margin:0 5px 5px 5px;text-align:right;"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="btn btn-primary searchButton"/></div>
+					</form>
+				</div>
+			</div>
+
+			<!--
+			<div class="menu open">
+				<h1>Note</h1>
+				<div class="submenu-wrapper" style="padding:10px;color:#444;">
+					Please do not discuss the 2015 AMC 8 Competition on any website until November 25th.
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+
+	<div id="main-column" style="margin-top:10px">
+				<div id="mw-js-message" style="display:none;"></div>
+		<h1 id="firstHeading" class="firstHeading">2000 AIME I Problems</h1>
+		
+						
+		<div class="mw-body">
+													
+			<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="wikitable" style="margin:0.5em auto; font-size:95%; border:1px solid black; width:50%;">
+<tr>
+<td style="background:#ccf;text-align:center;" colspan="3"> <b><a href="/wiki/index.php?title=2000_AIME_I" title="2000 AIME I">2000 AIME I</a></b> (<b><a href="/wiki/index.php?title=2000_AIME_I_Answer_Key" title="2000 AIME I Answer Key">Answer Key</a></b>)<br /> <span class="noprint plainlinks"><a rel="nofollow" class="external text" href="//artofproblemsolving.com/wiki/index.php?title=2000_AIME_I_Problems&amp;printable=yes">Printable version</a></span> | <a rel="nofollow" class="external text" href="http://www.artofproblemsolving.com/Forum/resources.php?c=182&amp;cid=45&amp;year=2000">AoPS Contest Collections</a>
+</td></tr>
+<tr>
+<td style="font-size:80%;">
+<p><font style="text-align:center;">Instructions</font>
+</p>
+<ol><li> This is a 15-question, 3-hour examination. All answers are integers ranging from <img src="//latex.artofproblemsolving.com/d/c/7/dc7ddbca9440579298bf24e0f9bcf2c0457bfc1b.png" class="latex" alt="$000$"  width="26" height="12" > to <img src="//latex.artofproblemsolving.com/0/7/0/0705411d92671faf1fe5602cfef8f353c7f0f83d.png" class="latex" alt="$999$"  width="26" height="12" >, inclusive. Your score will be the number of correct answers; i.e., there is neither partial credit nor a penalty for wrong answers.</li>
+<li> No aids other than scratch paper, graph paper, ruler, compass, and protractor are permitted. In particular, <u><b>calculators and computers are not permitted.</b></u> </li></ol>
+</td></tr>
+<tr>
+<td style="text-align:center;"> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_1" title="2000 AIME I Problems/Problem 1">1</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_2" title="2000 AIME I Problems/Problem 2">2</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_3" title="2000 AIME I Problems/Problem 3">3</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_4" title="2000 AIME I Problems/Problem 4">4</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_5" title="2000 AIME I Problems/Problem 5">5</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_6" title="2000 AIME I Problems/Problem 6">6</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_7" title="2000 AIME I Problems/Problem 7">7</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_8" title="2000 AIME I Problems/Problem 8">8</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_9" title="2000 AIME I Problems/Problem 9">9</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_10" title="2000 AIME I Problems/Problem 10">10</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_11" title="2000 AIME I Problems/Problem 11">11</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_12" title="2000 AIME I Problems/Problem 12">12</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_13" title="2000 AIME I Problems/Problem 13">13</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_14" title="2000 AIME I Problems/Problem 14">14</a> <b>•</b> <a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_15" title="2000 AIME I Problems/Problem 15">15</a>
+</td></tr></table>
+<div id="toc" class="toc"><div id="toctitle" class="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Problem_1"><span class="tocnumber">1</span> <span class="toctext">Problem 1</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Problem_2"><span class="tocnumber">2</span> <span class="toctext">Problem 2</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Problem_3"><span class="tocnumber">3</span> <span class="toctext">Problem 3</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Problem_4"><span class="tocnumber">4</span> <span class="toctext">Problem 4</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Problem_5"><span class="tocnumber">5</span> <span class="toctext">Problem 5</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Problem_6"><span class="tocnumber">6</span> <span class="toctext">Problem 6</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Problem_7"><span class="tocnumber">7</span> <span class="toctext">Problem 7</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Problem_8"><span class="tocnumber">8</span> <span class="toctext">Problem 8</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Problem_9"><span class="tocnumber">9</span> <span class="toctext">Problem 9</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Problem_10"><span class="tocnumber">10</span> <span class="toctext">Problem 10</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Problem_11"><span class="tocnumber">11</span> <span class="toctext">Problem 11</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Problem_12"><span class="tocnumber">12</span> <span class="toctext">Problem 12</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Problem_13"><span class="tocnumber">13</span> <span class="toctext">Problem 13</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Problem_14"><span class="tocnumber">14</span> <span class="toctext">Problem 14</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Problem_15"><span class="tocnumber">15</span> <span class="toctext">Problem 15</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#See_also"><span class="tocnumber">16</span> <span class="toctext">See also</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Problem_1">Problem 1</span></h2>
+<p>Find the least positive integer <img src="//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" class="latex" alt="$n$"  width="10" height="8" > such that no matter how <img src="//latex.artofproblemsolving.com/a/9/4/a940d2601fa9fb217bd5e10b8cad6e1a2da78643.png" class="latex" alt="$10^{n}$" style="vertical-align: 0px" width="26" height="13" > is expressed as the product of any two positive integers, at least one of these two integers contains the digit <img src="//latex.artofproblemsolving.com/b/c/1/bc1f9d9bf8a1b606a4188b5ce9a2af1809e27a89.png" class="latex" alt="$0$"  width="8" height="12" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_1" title="2000 AIME I Problems/Problem 1">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_2">Problem 2</span></h2>
+<p>Let <img src="//latex.artofproblemsolving.com/9/a/d/9ad99798ec4c38e165cf517cb9e02b1c9e824103.png" class="latex" alt="$u$"  width="10" height="8" > and <img src="//latex.artofproblemsolving.com/a/9/f/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" class="latex" alt="$v$"  width="9" height="8" > be integers satisfying <img src="//latex.artofproblemsolving.com/c/9/e/c9e1e81f3f49967c65f2d0c3f14b7ef1b71d8650.png" class="latex" alt="$0 &lt; v &lt; u$" style="vertical-align: 0px" width="77" height="13" >. Let <img src="//latex.artofproblemsolving.com/3/b/9/3b9c00a850de1eaf2452caa17bfdd889c1bd518b.png" class="latex" alt="$A = (u,v)$" style="vertical-align: -4px" width="78" height="18" >, let <img src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" class="latex" alt="$B$"  width="14" height="12" > be the reflection of <img src="//latex.artofproblemsolving.com/0/1/9/019e9892786e493964e145e7c5cf7b700314e53b.png" class="latex" alt="$A$"  width="13" height="13" > across the line <img src="//latex.artofproblemsolving.com/a/4/0/a40fee4603b4536f856dde720ee499468ace443f.png" class="latex" alt="$y = x$" style="vertical-align: -3px" width="44" height="11" >, let <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" class="latex" alt="$C$"  width="14" height="12" > be the reflection of <img src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" class="latex" alt="$B$"  width="14" height="12" > across the y-axis, let <img src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" class="latex" alt="$D$"  width="15" height="12" > be the reflection of <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" class="latex" alt="$C$"  width="14" height="12" > across the x-axis, and let <img src="//latex.artofproblemsolving.com/f/a/2/fa2fa899f0afb05d6837885523503a2d4df434f9.png" class="latex" alt="$E$"  width="14" height="12" > be the reflection of <img src="//latex.artofproblemsolving.com/9/f/f/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" class="latex" alt="$D$"  width="15" height="12" > across the y-axis. The area of pentagon <img src="//latex.artofproblemsolving.com/f/1/3/f13a96240c51d61ba3733d9f5c3020fa92ec4136.png" class="latex" alt="$ABCDE$"  width="72" height="13" > is <img src="//latex.artofproblemsolving.com/1/9/4/194d98563bb5459996531f6ed210703f6ce98a34.png" class="latex" alt="$451$" style="vertical-align: 0px" width="26" height="13" >. Find <img src="//latex.artofproblemsolving.com/3/8/7/387885f0e6ec1245f344fd1b192210e4a689e7f6.png" class="latex" alt="$u + v$" style="vertical-align: -1px" width="41" height="12" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_2" title="2000 AIME I Problems/Problem 2">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_3">Problem 3</span></h2>
+<p>In the expansion of <img src="//latex.artofproblemsolving.com/2/5/9/2591337e187b67538692f227ec63184d512bc413.png" class="latex" alt="$(ax + b)^{2000},$" style="vertical-align: -4px" width="95" height="19" > where <img src="//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png" class="latex" alt="$a$"  width="9" height="8" > and <img src="//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" class="latex" alt="$b$"  width="8" height="12" > are relatively prime positive integers, the coefficients of <img src="//latex.artofproblemsolving.com/a/6/e/a6e87b69178d197c13b13d595e7e6817cf20df95.png" class="latex" alt="$x^{2}$"  width="16" height="15" > and <img src="//latex.artofproblemsolving.com/b/8/2/b820233fa1a5accf8aeaeefeb90d298c58b54a78.png" class="latex" alt="$x^{3}$"  width="16" height="15" > are equal. Find <img src="//latex.artofproblemsolving.com/5/d/f/5df6a591474ffd81edd37d8d9f52f6f476caa531.png" class="latex" alt="$a + b$" style="vertical-align: -1px" width="40" height="14" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_3" title="2000 AIME I Problems/Problem 3">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_4">Problem 4</span></h2>
+<p>The diagram shows a rectangle that has been dissected into nine non-overlapping squares. Given that the width and the height of the rectangle are relatively prime positive integers, find the perimeter of the rectangle.
+</p>
+<center><img src="//latex.artofproblemsolving.com/d/8/1/d8140d628cc0905f333aa8deaface1b89ee6c983.png" class="latexcenter" alt="[asy]draw((0,0)--(69,0)--(69,61)--(0,61)--(0,0));draw((36,0)--(36,36)--(0,36)); draw((36,33)--(69,33));draw((41,33)--(41,61));draw((25,36)--(25,61)); draw((34,36)--(34,45)--(25,45)); draw((36,36)--(36,38)--(34,38)); draw((36,38)--(41,38)); draw((34,45)--(41,45));[/asy]"  width="252" height="222" ></center>
+<p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_4" title="2000 AIME I Problems/Problem 4">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_5">Problem 5</span></h2>
+<p>Each of two boxes contains both black and white marbles, and the total number of marbles in the two boxes is <img src="//latex.artofproblemsolving.com/6/7/b/67bc7bd42e6cb90851b324c8f2955a8d3021b6cb.png" class="latex" alt="$25.$"  width="21" height="12" > One marble is taken out of each box randomly. The probability that both marbles are black is <img src="//latex.artofproblemsolving.com/3/1/b/31b28256f00c23f97ba700e3f5f35b627880474e.png" class="latex" alt="$\frac{27}{50},$" style="vertical-align: -12px" width="26" height="37" > and the probability that both marbles are white is <img src="//latex.artofproblemsolving.com/8/8/8/888fed89e19182447f85b3cb6676548a49395284.png" class="latex" alt="$\frac{m}{n},$" style="vertical-align: -12px" width="24" height="33" > where <img src="//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" class="latex" alt="$m$"  width="15" height="8" > and <img src="//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" class="latex" alt="$n$"  width="10" height="8" > are relatively prime positive integers. What is <img src="//latex.artofproblemsolving.com/5/3/b/53bf1afcb274a3bb84338109fffec8a1f1c02008.png" class="latex" alt="$m + n$" style="vertical-align: -1px" width="48" height="12" >?
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_5" title="2000 AIME I Problems/Problem 5">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_6">Problem 6</span></h2>
+<p>For how many ordered pairs <img src="//latex.artofproblemsolving.com/e/5/3/e53b1fe25be1c679117fb44a6a886fe1247d189a.png" class="latex" alt="$(x,y)$" style="vertical-align: -4px" width="40" height="18" > of integers is it true that <img src="//latex.artofproblemsolving.com/d/c/3/dc30dbca1ad742a8ff49e219e2f9562f83d3590e.png" class="latex" alt="$0 &lt; x &lt; y &lt; 10^{6}$" style="vertical-align: -3px" width="126" height="18" > and that the arithmetic mean of <img src="//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" class="latex" alt="$x$"  width="10" height="8" > and <img src="//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" class="latex" alt="$y$" style="vertical-align: -3px" width="9" height="11" > is exactly <img src="//latex.artofproblemsolving.com/4/1/c/41c544263a265ff15498ee45f7392c5f86c6d151.png" class="latex" alt="$2$"  width="8" height="12" > more than the geometric mean of <img src="//latex.artofproblemsolving.com/2/6/e/26eeb5258ca5099acf8fe96b2a1049c48c89a5e6.png" class="latex" alt="$x$"  width="10" height="8" > and <img src="//latex.artofproblemsolving.com/0/9/2/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" class="latex" alt="$y$" style="vertical-align: -3px" width="9" height="11" >?
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_6" title="2000 AIME I Problems/Problem 6">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_7">Problem 7</span></h2>
+<p>Suppose that <img src="//latex.artofproblemsolving.com/6/d/0/6d0382f3585219947b495ac2262a81b7b0c40db2.png" class="latex" alt="$x,$" style="vertical-align: -3px" width="14" height="11" > <img src="//latex.artofproblemsolving.com/8/d/1/8d1d002db36c51a77f8fbc6314e96756fc793e28.png" class="latex" alt="$y,$" style="vertical-align: -3px" width="13" height="11" > and <img src="//latex.artofproblemsolving.com/b/1/3/b13f21416d84e13708696f34dea81026cda583c9.png" class="latex" alt="$z$"  width="8" height="8" > are three positive numbers that satisfy the equations <img src="//latex.artofproblemsolving.com/2/e/9/2e988f323d208e6bd8e56144accacad42a03f7a3.png" class="latex" alt="$xyz = 1,$" style="vertical-align: -3px" width="66" height="15" > <img src="//latex.artofproblemsolving.com/e/0/c/e0c2723766041f6fcfdeea0ab4847345fdbb37d2.png" class="latex" alt="$x + \frac {1}{z} = 5,$" style="vertical-align: -12px" width="83" height="37" > and <img src="//latex.artofproblemsolving.com/8/f/d/8fdc9669fd7ec337c8bb9d192af1b9e85b464ce3.png" class="latex" alt="$y + \frac {1}{x} = 29.$" style="vertical-align: -12px" width="92" height="37" > Then <img src="//latex.artofproblemsolving.com/9/3/3/933d0c21aee3f07a66d6f94e2738bf278ea652a5.png" class="latex" alt="$z + \frac {1}{y} = \frac {m}{n},$" style="vertical-align: -16px" width="93" height="40" > where <img src="//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" class="latex" alt="$m$"  width="15" height="8" > and <img src="//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" class="latex" alt="$n$"  width="10" height="8" > are relatively prime positive integers. Find <img src="//latex.artofproblemsolving.com/5/3/b/53bf1afcb274a3bb84338109fffec8a1f1c02008.png" class="latex" alt="$m + n$" style="vertical-align: -1px" width="48" height="12" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_7" title="2000 AIME I Problems/Problem 7">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_8">Problem 8</span></h2>
+<p>A container in the shape of a right circular cone is 12 inches tall and its base has a 5-inch radius. The liquid that is sealed inside is 9 inches deep when the cone is held with its point down and its base horizontal. When the liquid is held with its point up and its base horizontal, the height of the liquid is <img src="//latex.artofproblemsolving.com/1/5/8/1586f2bca69882cdcb09b653822a61d6a5931db7.png" class="latex" alt="$m - n\sqrt [3]{p},$" style="vertical-align: -5px" width="78" height="18" > where <img src="//latex.artofproblemsolving.com/1/e/d/1ed17364b06ad42c2450df4d0f6a0f06034086bc.png" class="latex" alt="$m,$" style="vertical-align: -3px" width="20" height="11" > <img src="//latex.artofproblemsolving.com/c/5/4/c54e7152acd659788861f0453ac195c635e0a005.png" class="latex" alt="$n,$" style="vertical-align: -3px" width="15" height="11" > and <img src="//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" class="latex" alt="$p$" style="vertical-align: -3px" width="10" height="11" > are positive integers and <img src="//latex.artofproblemsolving.com/3/6/f/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" class="latex" alt="$p$" style="vertical-align: -3px" width="10" height="11" > is not divisible by the cube of any prime number. Find <img src="//latex.artofproblemsolving.com/8/f/2/8f23423034093484df72a3171da00744b1e11963.png" class="latex" alt="$m + n + p$" style="vertical-align: -3px" width="80" height="14" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_8" title="2000 AIME I Problems/Problem 8">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_9">Problem 9</span></h2>
+<p>The system of equations
+<img src="//latex.artofproblemsolving.com/2/5/a/25a75484f3b73e7e3841e3d1392130f345ca81db.png" class="latexcenter" alt="\begin{eqnarray*}\log_{10}(2000xy) - (\log_{10}x)(\log_{10}y) &amp; = &amp; 4 \\ \log_{10}(2yz) - (\log_{10}y)(\log_{10}z) &amp; = &amp; 1 \\ \log_{10}(zx) - (\log_{10}z)(\log_{10}x) &amp; = &amp; 0 \\ \end{eqnarray*}"  width="315" height="68" >
+</p><p>has two solutions <img src="//latex.artofproblemsolving.com/f/0/4/f04f0b38c9c2cc484d5fdb84a3857545cf24866d.png" class="latex" alt="$(x_{1},y_{1},z_{1})$" style="vertical-align: -4px" width="79" height="18" > and <img src="//latex.artofproblemsolving.com/1/8/1/18180d9bbae2af30d806efc982aaf1c0d95aa32c.png" class="latex" alt="$(x_{2},y_{2},z_{2})$" style="vertical-align: -4px" width="79" height="18" >. Find <img src="//latex.artofproblemsolving.com/9/f/f/9ffa8b0af852d77f5f200ec347008956520fb6cf.png" class="latex" alt="$y_{1} + y_{2}$" style="vertical-align: -3px" width="53" height="14" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_9" title="2000 AIME I Problems/Problem 9">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_10">Problem 10</span></h2>
+<p>A sequence of numbers <img src="//latex.artofproblemsolving.com/3/c/6/3c61db98a692c031b51b5a22057c9a3125160e7d.png" class="latex" alt="$x_{1},x_{2},x_{3},\ldots,x_{100}$" style="vertical-align: -3px" width="139" height="11" > has the property that, for every integer <img src="//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png" class="latex" alt="$k$"  width="9" height="12" > between <img src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" class="latex" alt="$1$" style="vertical-align: 0px" width="8" height="12" > and <img src="//latex.artofproblemsolving.com/3/6/a/36af3a317653fc5ff424093b4df40c2b4d5a6f5f.png" class="latex" alt="$100,$" style="vertical-align: -3px" width="31" height="16" > inclusive, the number <img src="//latex.artofproblemsolving.com/9/d/6/9d620afedf2590a311e973edf32e72a2b9e14995.png" class="latex" alt="$x_{k}$" style="vertical-align: -2px" width="17" height="10" > is <img src="//latex.artofproblemsolving.com/8/c/3/8c325612684d41304b9751c175df7bcc0f61f64f.png" class="latex" alt="$k$"  width="9" height="12" > less than the sum of the other <img src="//latex.artofproblemsolving.com/a/3/1/a313bf06349648df7be807bee95b651604ce7a7e.png" class="latex" alt="$99$"  width="17" height="12" > numbers. Given that <img src="//latex.artofproblemsolving.com/4/a/e/4aefca8d802c19d4474592d58f7c5b6be2e5e401.png" class="latex" alt="$x_{50} = \frac{m}{n}$" style="vertical-align: -12px" width="66" height="33" >, where <img src="//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" class="latex" alt="$m$"  width="15" height="8" > and <img src="//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" class="latex" alt="$n$"  width="10" height="8" > are relatively prime positive integers, find <img src="//latex.artofproblemsolving.com/5/3/b/53bf1afcb274a3bb84338109fffec8a1f1c02008.png" class="latex" alt="$m + n$" style="vertical-align: -1px" width="48" height="12" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_10" title="2000 AIME I Problems/Problem 10">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_11">Problem 11</span></h2>
+<p>Let <img src="//latex.artofproblemsolving.com/a/d/2/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" class="latex" alt="$S$"  width="12" height="12" > be the sum of all numbers of the form <img src="//latex.artofproblemsolving.com/0/8/4/084079bf1d54500f3c59257a7ec3467932b72ba2.png" class="latex" alt="$\frac{a}{b}$" style="vertical-align: -12px" width="12" height="33" >, where <img src="//latex.artofproblemsolving.com/c/7/d/c7d457e388298246adb06c587bccd419ea67f7e8.png" class="latex" alt="$a$"  width="9" height="8" > and <img src="//latex.artofproblemsolving.com/8/1/3/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" class="latex" alt="$b$"  width="8" height="12" > are relatively prime positive divisors of <img src="//latex.artofproblemsolving.com/6/b/4/6b434ebc2071e706df740975a3c90aad3cfa1455.png" class="latex" alt="$1000.$" style="vertical-align: 0px" width="39" height="13" > What is the greatest integer that does not exceed <img src="//latex.artofproblemsolving.com/3/7/5/3757a1ea629ad4f825b067ab50ae32035ab8f44b.png" class="latex" alt="$\frac{S}{10}$" style="vertical-align: -13px" width="20" height="38" >?
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_11" title="2000 AIME I Problems/Problem 11">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_12">Problem 12</span></h2>
+<p>Given a function <img src="//latex.artofproblemsolving.com/b/b/2/bb2c93730dbb48558bb3c4738c956c4e8f816437.png" class="latex" alt="$f$" style="vertical-align: -3px" width="10" height="16" > for which
+</p>
+<center><img src="//latex.artofproblemsolving.com/e/d/3/ed3b71f245528b2172017648ad46875af6955664.png" class="latex" alt="$f(x) = f(398 - x) = f(2158 - x) = f(3214 - x)$" style="vertical-align: -4px" width="379" height="18" ></center>
+<p>holds for all real <img src="//latex.artofproblemsolving.com/6/d/0/6d0382f3585219947b495ac2262a81b7b0c40db2.png" class="latex" alt="$x,$" style="vertical-align: -3px" width="14" height="11" > what is the largest number of different values that can appear in the list <img src="//latex.artofproblemsolving.com/e/3/0/e307ce2d299568259c28f3ec6df5a39bce508b77.png" class="latex" alt="$f(0),f(1),f(2),\ldots,f(999)$" style="vertical-align: -4px" width="209" height="18" >?
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_12" title="2000 AIME I Problems/Problem 12">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_13">Problem 13</span></h2>
+<p>In the middle of a vast prairie, a firetruck is stationed at the intersection of two perpendicular straight highways. The truck travels at <img src="//latex.artofproblemsolving.com/9/0/6/906734e2f1010e9a171ffee8050cbc0649cea37c.png" class="latex" alt="$50$"  width="17" height="12" > miles per hour along the highways and at <img src="//latex.artofproblemsolving.com/8/2/0/820a20de2847dfdc1bc5cffc8d904933150032bd.png" class="latex" alt="$14$" style="vertical-align: 0px" width="18" height="12" > miles per hour across the prairie. Consider the set of points that can be reached by the firetruck within six minutes. The area of this region is <img src="//latex.artofproblemsolving.com/2/7/f/27f583697295fc6f723862c13228ee55107c33ca.png" class="latex" alt="$\frac{m}{n}$" style="vertical-align: -12px" width="18" height="33" > square miles, where <img src="//latex.artofproblemsolving.com/f/5/0/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" class="latex" alt="$m$"  width="15" height="8" > and <img src="//latex.artofproblemsolving.com/1/7/4/174fadd07fd54c9afe288e96558c92e0c1da733a.png" class="latex" alt="$n$"  width="10" height="8" > are relatively prime positive integers. Find <img src="//latex.artofproblemsolving.com/5/3/b/53bf1afcb274a3bb84338109fffec8a1f1c02008.png" class="latex" alt="$m + n$" style="vertical-align: -1px" width="48" height="12" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_13" title="2000 AIME I Problems/Problem 13">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_14">Problem 14</span></h2>
+<p>In triangle <img src="//latex.artofproblemsolving.com/9/5/f/95fdfbb0362c49460ab4b7ef61acc59d3b0fac79.png" class="latex" alt="$ABC,$" style="vertical-align: -3px" width="45" height="16" > it is given that angles <img src="//latex.artofproblemsolving.com/f/f/5/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" class="latex" alt="$B$"  width="14" height="12" > and <img src="//latex.artofproblemsolving.com/c/3/3/c3355896da590fc491a10150a50416687626d7cc.png" class="latex" alt="$C$"  width="14" height="12" > are congruent. Points <img src="//latex.artofproblemsolving.com/4/b/4/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" class="latex" alt="$P$"  width="14" height="12" > and <img src="//latex.artofproblemsolving.com/9/8/6/9866e3a998d628ba0941eb4fea0666ac391d149a.png" class="latex" alt="$Q$" style="vertical-align: -3px" width="13" height="16" > lie on <img src="//latex.artofproblemsolving.com/1/2/5/12517bbc31cb9026c71299b7a0d232d07e60f284.png" class="latex" alt="$\overline{AC}$"  width="28" height="15" > and <img src="//latex.artofproblemsolving.com/4/f/6/4f694ab8315c055ae7dd5d9fe5ba57a1a7c97a99.png" class="latex" alt="$\overline{AB},$" style="vertical-align: -3px" width="32" height="19" > respectively, so that <img src="//latex.artofproblemsolving.com/3/7/f/37fc6f379c2f2c037524ff14210522483e082fdd.png" class="latex" alt="$AP = PQ = QB = BC.$" style="vertical-align: -3px" width="189" height="16" > Angle <img src="//latex.artofproblemsolving.com/2/1/3/21361fc8f29984fa3e95bfc0e578efdbce08c736.png" class="latex" alt="$ACB$"  width="42" height="13" > is <img src="//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" class="latex" alt="$r$"  width="8" height="8" > times as large as angle <img src="//latex.artofproblemsolving.com/0/7/1/07109daf5ed3842f99982570ece328e761f3f46c.png" class="latex" alt="$APQ,$" style="vertical-align: -3px" width="46" height="16" > where <img src="//latex.artofproblemsolving.com/b/5/5/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" class="latex" alt="$r$"  width="8" height="8" > is a positive real number. Find the greatest integer that does not exceed <img src="//latex.artofproblemsolving.com/5/6/d/56d6a4160bf17f659e4ee540900f0eb7371f7b2a.png" class="latex" alt="$1000r$" style="vertical-align: 0px" width="44" height="13" >.
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_14" title="2000 AIME I Problems/Problem 14">Solution</a>
+</p>
+<h2><span class="mw-headline" id="Problem_15">Problem 15</span></h2>
+<p>A stack of <img src="//latex.artofproblemsolving.com/0/5/f/05f1ffc8a6829f25b0b0366087a70dfd4e06fef6.png" class="latex" alt="$2000$"  width="35" height="12" > cards is labelled with the integers from <img src="//latex.artofproblemsolving.com/d/c/e/dce34f4dfb2406144304ad0d6106c5382ddd1446.png" class="latex" alt="$1$" style="vertical-align: 0px" width="8" height="12" > to <img src="//latex.artofproblemsolving.com/d/9/f/d9fe766cd947d9c20a2f13332fefb74cddaaef56.png" class="latex" alt="$2000,$" style="vertical-align: -3px" width="40" height="16" > with different integers on different cards. The cards in the stack are not in numerical order. The top card is removed from the stack and placed on the table, and the next card is moved to the bottom of the stack. The new top card is removed from the stack and placed on the table, to the right of the card already there, and the next card in the stack is moved to the bottom of the stack. The process - placing the top card to the right of the cards already on the table and moving the next card in the stack to the bottom of the stack - is repeated until all cards are on the table. It is found that, reading from left to right, the labels on the cards are now in ascending order: <img src="//latex.artofproblemsolving.com/f/e/0/fe0271ec73f245bf0bebc90707a44ffa4adc53f6.png" class="latex" alt="$1,2,3,\ldots,1999,2000.$" style="vertical-align: -3px" width="168" height="16" > In the original stack of cards, how many cards were above the card labeled <img src="//latex.artofproblemsolving.com/0/4/0/04003e1a630efc44ec0e7f6e532cf92ad21b6024.png" class="latex" alt="$1999$" style="vertical-align: 0px" width="35" height="13" >?
+</p><p><a href="/wiki/index.php?title=2000_AIME_I_Problems/Problem_15" title="2000 AIME I Problems/Problem 15">Solution</a>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li> <a href="/wiki/index.php?title=American_Invitational_Mathematics_Examination" title="American Invitational Mathematics Examination">American Invitational Mathematics Examination</a></li>
+<li> <a href="/wiki/index.php?title=AIME_Problems_and_Solutions" title="AIME Problems and Solutions">AIME Problems and Solutions</a></li>
+<li> <a href="/wiki/index.php?title=Mathematics_competition_resources" class="mw-redirect" title="Mathematics competition resources">Mathematics competition resources</a></li></ul>
+<p>The problems on this page are copyrighted by the <a rel="nofollow" class="external text" href="http://www.maa.org">Mathematical Association of America</a>'s <a rel="nofollow" class="external text" href="http://amc.maa.org">American Mathematics Competitions</a>. <a href="/wiki/index.php?title=File:AMC_logo.png" class="image"><img alt="AMC logo.png" src="//wiki-images.artofproblemsolving.com/8/8b/AMC_logo.png" width="97" height="84" style="vertical-align: middle" /></a>
+</p>
+<div style="clear:both;"></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20170926232355
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.120 seconds
+Real time usage: 0.123 seconds
+Preprocessor visited node count: 1056/1000000
+Preprocessor generated node count: 2465/1000000
+Post‐expand include size: 2085/2097152 bytes
+Template argument size: 89/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   43.928      1 -total
+ 11.63%    5.110      1 Template:AIME_Problems
+  1.95%    0.859      1 Template:MAA_Notice
+-->
+
+<!-- Saved in parser cache with key wiki-wiki_:pcache:idhash:2748-0!*!0!!en!5!* and timestamp 20170926232355 and revision id 69481
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="http://artofproblemsolving.com/wiki/index.php?title=2000_AIME_I_Problems&amp;oldid=69481">http://artofproblemsolving.com/wiki/index.php?title=2000_AIME_I_Problems&amp;oldid=69481</a>"</div>
+
+				
+							<div class="catlinks"><div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></div>
+							
+				
+					</div>
+		
+		
+	</div>
+</div>
+<!-- search:off -->
+			<div class="clearfix"></div>
+
+
+			<div id="the-end-1" class="clearfix no-print">
+				<div class="container clearfix">
+					<div class="col-wasc">
+						<div></div>
+						ACS WASC<br>ACCREDITED<br>SCHOOL
+					</div>
+
+					<div class="col-about">
+						<h2>About</h2>
+						<a class="link" href="/company/staff">Our Team</a>
+						<a class="link" href="/company/history">Our History</a>
+						<a class="link" href="/company/careers">Jobs</a>
+					</div>
+
+					<div class="col-info">
+						<h2 style="left:-1px;">Site Info</h2>
+						<a class="link" href="/company/tos">Terms</a>
+						<a class="link" href="/company/privacy">Privacy</a>
+						<a class="link" href="/contact">Contact Us</a>
+					</div>
+
+					<div class="col-help">
+						<h2>Help</h2>
+						<a class="link" href="/school/recommendations">School</a>
+						<a class="link" href="/store/recommendations">Books</a>
+						<a class="link" href="/community/faq">Community</a>
+					</div>
+
+					<div class="stay-connected">
+
+						<a target="_blank" href="http://www.facebook.com/home.php?#/pages/Art-of-Problem-Solving/322689570276"><div class="social-icon facebook-icon"></div></a>
+						<a target="_blank" href="http://twitter.com/AoPSNews"><div class="social-icon twitter-icon"></div></a>
+
+						<h2>Stay Connected</h2>
+						<div class="copy">
+							<a href="/mailinglist">Subscribe</a> to get news and<br>
+							updates from AoPS, or <a href="/contact">Contact Us</a>.
+						</div>
+						<form method="post" action="/mailinglist">
+							<input type="email" class="email" placeholder="Enter e-mail address" name="subscribe-email">
+							<input type="hidden" name="new-books" value="on">
+							<input type="hidden" name="classes" value="on">
+							<input type="hidden" name="mathjams" value="on">
+							<input type="submit" class="btn" value="Subscribe">
+						</form>
+					</div>
+					<a class="beast" href="http://beastacademy.com"></a>
+				</div>
+			</div>
+
+			<div id="the-end-2" class="no-print">
+				<div class="container clearfix">
+					<div class="copy">
+						<span>
+						&copy; 2017<br>
+						AoPS Incorporated
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="small-footer-wrapper">
+				<div id="small-footer-panel">
+					<span class="copyright">
+						&copy; 2017 Art of Problem Solving
+					</span>
+					<a href="/company/tos">Terms</a>
+					<a href="/company/privacy">Privacy</a>
+					<a href="/contact">Contact Us</a>
+					<a href="/company/staff">About Us</a>
+				</div>
+			</div>
+
+			<!--<div id="login-mask"></div>-->
+						<div id="login-form">
+
+				<div class="error">
+					Invalid username
+				</div>
+
+				<div class="info">
+					Login to AoPS
+				</div>
+				<form>
+					<div class="form-group">
+						<div>
+							<label>Username:</label>
+						</div>
+						<div>
+							<input name="username" class="form-control" id="login-username" type="text" placeholder="Enter username or email address" autocapitalize="off">
+						</div>
+					</div>
+					<div class="form-group">
+						<div>
+							<label>Password:</label>
+						</div>
+						<div>
+							<input name="password" class="form-control" id="login-password" type="hidden" placeholder="Enter password" autocomplete="off">
+						</div>
+					</div>
+				</form>
+				<div class="form-group">
+					<div>
+					</div>
+					<div>
+						<button class="btn btn-primary" id="login-button" href="#">Login</button>
+						<button class="btn" id="login-cancel-button" href="#">Cancel</button>
+						<span style="padding-left:20px;" id="login-message"></span>
+						<div style="margin-top:5px;">
+							<label style="display:block;float:left;padding-right:10px;white-space:nowrap;line-height:1em;font-weight:normal">
+								<input type="checkbox" name="stay-logged-in" id="login-stay-logged-in" style="vertical-align:middle;margin:0;">
+								<span style="vertical-align:middle">Stay logged in</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<!--
+				<div class="form-group">
+					<div>
+					</div>
+					<div>
+						<a id="login-facebook" href="#">Login with Facebook</a>
+					</div>
+				</div>
+				-->
+
+				<div id="login-form-links">
+					<p>
+						<a href="/user/register.php">Create a new account</a>
+					</p>
+					<p>
+						<a href="/user/resend-activation.php">Lost your activation email?</a>
+					</p>
+					<p>
+						<a href="/user/reset-pw.php">Forgot your password or username?</a>
+					</p>
+				</div>
+			</div>
+					</div>
+		<div id="print-footer" class="printer">Copyright &copy; 2017 Art of Problem Solving</div>
+
+
+		<script src="/assets/vendor/common-combined.js?__v__=1"></script>
+		<script>_.mixin(_.str.exports());</script>
+
+
+
+				<script>
+			AoPS.bootstrap_data = [];
+			AoPS.bd = AoPS.bootstrap_data; // Alias!
+		</script>
+
+		<script src="/assets/js/aops.js?__v__=1"></script>
+				<script src="/assets/js/ui.js?__v__=1"></script>
+
+				
+				
+		
+		<!-- /search:off -->
+
+	</body>
+</html>
