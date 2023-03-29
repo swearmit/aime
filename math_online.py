@@ -231,7 +231,7 @@ class Math_Online(object):
         if ndata <= maxn:
             nproblems = range(ndata)
         else:
-            nproblems = [random.randint(0, ndata-1) for p in range(0,maxn)]
+            nproblems = [random.randint(0, ndata-1) for p in range(0, maxn)]
 
         # generate the html file
         with open(html, 'a+') as fp:
@@ -248,7 +248,7 @@ class Math_Online(object):
 if __name__ == "__main__":
     csv = 'math_lib.csv'
     types = config.keys()
-    print("Available tests: %s"%types)
+    print("Available tests: %s" % types)
     test = input('Please chhoose one[aime]: ') or 'aime'
     num = input('Please choose the number of problems in your test[15]: ') or '15'
     num = int(num)
