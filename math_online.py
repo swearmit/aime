@@ -109,7 +109,7 @@ class Math_Online(object):
                             if not href:
                                 continue
                             url = self._url + href.group(1)
-                        except:
+                        except:  # noqa: E722
                             continue
 
                         data = self.get_pages(url=url, test=tt)
@@ -134,7 +134,7 @@ class Math_Online(object):
         pages = self._cfg[test]['pages'][:]
         for ii, page in enumerate(pages):
             if '()' in page:
-                page = re.sub('\(\)', title, page)
+                page = re.sub('\(\)', title, page)  # noqa: W605
                 pages[ii] = page
 
         result = []
@@ -206,7 +206,7 @@ class Math_Online(object):
 
         # automatically change the filename if the given exists
         while os.path.exists(html):
-            num = re.search('(\D*(\d*)\D*)?', html).group(2)
+            num = re.search('(\D*(\d*)\D*)?', html).group(2)  # noqa: W605
             if not num:
                 tmp = list(os.path.splitext(html))
                 tmp[0] += '0'

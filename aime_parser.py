@@ -38,7 +38,7 @@ class AIME_Parser(object):
             # loop through each line
             for ii, line in enumerate(self._fname):
                 # find problem start
-                if re.search('id=\"Problem.*\>Problem.*', line):
+                if re.search('id=\"Problem.*\>Problem.*', line):  # noqa: w605
                     start = True
                     # title = line
                     continue
