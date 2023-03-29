@@ -31,7 +31,7 @@ class Math_Online(object):
         # update self._lib 
         if lib is None:
             lib = 'mathlib.lib'
-        if lib and isinstance(lib, basestring):
+        if lib and isinstance(lib, str):
             self._lib = lib
 
         # buffer to store problems
@@ -188,7 +188,7 @@ class Math_Online(object):
             html = 'test1.html'
 
         # validate html
-        if not (html and isinstance(html, basestring) and 'html' in html.lower()):
+        if not (html and isinstance(html, str) and 'html' in html.lower()):
             print('Invalid html')
             return
 

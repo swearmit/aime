@@ -4,11 +4,13 @@ For example https://artofproblemsolving.com/wiki/index.php?title=2017_AIME_I_Pro
 """
 import os
 import re
-import pdb
-import traceback
 from StringIO import StringIO
 
+
 class AIME_Parser(object):
+    """
+    AIME Parser
+    """
     def __init__(self, fname=None, url=None):
         # set default parameters
         self._result = []
@@ -18,13 +20,13 @@ class AIME_Parser(object):
         # update file name for aime problems
         if fname and isinstance(fname, StringIO):
             self._fname = fname
-        elif fname and isinstance(fname, basestring) and os.path.exists(fname):
+        elif fname and isinstance(fname, str) and os.path.exists(fname):
             self._fname = open(fname,'r')
         else:
             print("'fname' must be a file or a stream.")
 
         # update url if given
-        if url and isinstance(url, basestring) and 'http' in url.lower():
+        if url and isinstance(url, str) and 'http' in url.lower():
             self._url = url
 
     def __call__(self):
