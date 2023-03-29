@@ -28,13 +28,13 @@ class Math_Online(object):
             valid = True
             for kk, vv in cfg.iteritems():
                 for key in required_keys:
-                    if not key in vv:
+                    if key not in vv:
                         valid = False
                         break
             if valid:
                 self._cfg = cfg
 
-        # update self._lib 
+        # update self._lib
         if lib is None:
             lib = 'mathlib.lib'
         if lib and isinstance(lib, str):
@@ -56,7 +56,7 @@ class Math_Online(object):
         # write data
         if lib and self._data:
 
-            data0 ={}
+            data0 = {}
             # check if lib already exists
             if os.path.exists(lib):
                 with open(lib, 'rb') as fd:
@@ -72,40 +72,40 @@ class Math_Online(object):
 
         if cfg and isinstance(cfg, dict):
 
-            # loop each type of tests 
+            # loop each type of tests
             for tt, vv in cfg.iteritems():
-                self._url = vv['url'].rsplit('/',2)[0]
-                if not tt in self._data:
-                    self._data[tt] = [[],[],[],[],[]]
+                self._url = vv['url'].rsplit('/', 2)[0]
+                if tt not in self._data:
+                    self._data[tt] = [[], [], [], [], []]
 
-                print("Working on %s, wait..."%tt.upper())
+                print("Working on %s, wait..." % tt.upper())
                 response = urllib2.urlopen(vv['url'])
-                htmls = response.read().replace('\t','').split('\n')
+                htmls = response.read().replace('\t', '').split('\n')
 
                 work_start = False
                 start = vv['start']
-                end   = vv['end']
+                end = vv['end']
 
                 for ii, line in enumerate(htmls):
 
-                    if (not start in line) and (not work_start):
+                    if (start not in line) and (not work_start):
                         continue
                     elif not work_start:
                         work_start = True
-                        #print "%s Start: %s, %d"%(tt.upper(), start, ii)
-                        #print "line: %s"%line
+                        # print "%s Start: %s, %d"%(tt.upper(), start, ii)
+                        # print "line: %s"%line
 
                     if end in line and work_start:
-                        #print "%s End: %s, %d"%(tt.upper(), end, ii)
-                        #print "line: %s"%line
+                        # print "%s End: %s, %d"%(tt.upper(), end, ii)
+                        # print "line: %s"%line
                         break
 
-                    if (not 'href' in line):
+                    if ('href' not in line):
                         continue
 
                     if work_start:
                         try:
-                            href = re.search('<a href="(.*?)"',line)
+                            href = re.search('<a href="(.*?)"', line)
                             if not href:
                                 continue
                             url = self._url + href.group(1)
@@ -128,7 +128,7 @@ class Math_Online(object):
     def get_pages(self, url=None, test=None):
         response = urllib2.urlopen(url)
         title = url.split('title=')[1].replace('_', ' ')
-        htmls = response.read().replace('\t','').split('\n')
+        htmls = response.read().replace('\t', '').split('\n')
 
         # if pages have (), replace it with title
         pages = self._cfg[test]['pages'][:]
@@ -144,11 +144,11 @@ class Math_Online(object):
 
             for page in pages:
                 if page in line:
-                    href = re.search('<a href="(.*?)"',line)
+                    href = re.search('<a href="(.*?)"', line)
                     if not href:
                         continue
                     url = self._url + href.group(1)
-                    if not 'answer' in url.lower():
+                    if 'answer' not in url.lower():
                         data = self.parse_page(url)
                     else:
                         answer = urllib2.urlopen(url).read()
@@ -156,7 +156,7 @@ class Math_Online(object):
                     # append all answer page on each problem
                     if answer and data:
                         for kk, vv in enumerate(data):
-                            vv.append(anser)
+                            vv.append(answer)
                             data[kk] = vv
 
                     # update the result
@@ -166,8 +166,8 @@ class Math_Online(object):
 
     def parse_page(self, url=None):
         response = urllib2.urlopen(url)
-        #data = response.read().replace('\t','').split("\n")
-        data = StringIO(response.read().replace('\t',''))
+        #d ata = response.read().replace('\t','').split("\n")
+        data = StringIO(response.read().replace('\t', ''))
         aime = AIME_Parser(data)
         return aime()
 
@@ -186,8 +186,8 @@ class Math_Online(object):
             test = 'aime'
 
         # check if we have problems for the given test type
-        if not test in self._data:
-            print("No problems found for %s"%test)
+        if test not in self._data:
+            print("No problems found for %s" % test)
             return
 
         if html is None:
@@ -200,13 +200,13 @@ class Math_Online(object):
 
         # attach the test type in the htnl filename
         tmp = list(os.path.splitext(html))
-        if not test in tmp[0]:
-            tmp[0] += "_%s"%test
+        if test not in tmp[0]:
+            tmp[0] += "_%s" % test
         html = ''.join(tmp)
 
         # automatically change the filename if the given exists
         while os.path.exists(html):
-            num = re.search('(\D*(\d*)\D*)?',html).group(2)
+            num = re.search('(\D*(\d*)\D*)?', html).group(2)
             if not num:
                 tmp = list(os.path.splitext(html))
                 tmp[0] += '0'
@@ -215,12 +215,10 @@ class Math_Online(object):
                 num1 = str(int(num) + 1)
                 html = re.sub(num, num1, html, 1)
 
-
         if isinstance(maxn, int) and maxn>0:
             self._max = maxn
         else:
             maxn = self._max
-
 
         n_per_difficulty = int(maxn/5)
         for kk in range(5):

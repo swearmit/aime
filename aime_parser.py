@@ -61,7 +61,6 @@ class AIME_Parser(object):
                         line = re.sub('/wiki/', "%s/wiki/" % self._url, line)
                     problem += re.sub('src="//latex.', 'src="https://latex.', line)
 
-
         return self._result
 
 
@@ -77,4 +76,3 @@ if __name__ == "__main__":
             fp.write(line[2])
             fp.write("<p>")
             fp.write("<p>")
-
