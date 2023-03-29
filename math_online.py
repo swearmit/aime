@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import os
 import re
-import pdb
 import pickle
 import random
 import urllib2
@@ -73,7 +72,7 @@ class Math_Online(object):
                 if not tt in self._data:
                     self._data[tt] = [[],[],[],[],[]]
 
-                print "Working on %s, wait..."%tt.upper()
+                print("Working on %s, wait..."%tt.upper())
                 response = urllib2.urlopen(vv['url'])
                 htmls = response.read().replace('\t','').split('\n')
 
@@ -169,7 +168,7 @@ class Math_Online(object):
     def create_html(self, test=None, html=None, maxn=15):
         # check if the library file exists
         if not os.path.exists(self._lib):
-            print 'No math library found.'
+            print('No math library found.')
             return
 
         # load the math problems
@@ -182,7 +181,7 @@ class Math_Online(object):
 
         # check if we have problems for the given test type
         if not test in self._data:
-            print "No problems found for %s"%test
+            print("No problems found for %s"%test)
             return
 
         if html is None:
@@ -190,7 +189,7 @@ class Math_Online(object):
 
         # validate html
         if not (html and isinstance(html, basestring) and 'html' in html.lower()):
-            print 'Invalid html'
+            print('Invalid html')
             return
 
         # attach the test type in the htnl filename
@@ -246,7 +245,7 @@ class Math_Online(object):
 if __name__ == "__main__":
     csv = 'math_lib.csv'
     types = config.keys()
-    print "Available tests: %s"%types
+    print("Available tests: %s"%types)
     test = raw_input('Please chhoose one[aime]: ') or 'aime'
     num = raw_input('Please choose the number of problems in your test[15]: ') or '15'
     num = int(num)
