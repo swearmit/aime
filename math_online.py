@@ -166,7 +166,7 @@ class Math_Online(object):
 
     def parse_page(self, url=None):
         response = urllib2.urlopen(url)
-        #d ata = response.read().replace('\t','').split("\n")
+        # d ata = response.read().replace('\t','').split("\n")
         data = StringIO(response.read().replace('\t', ''))
         aime = AIME_Parser(data)
         return aime()
@@ -215,7 +215,7 @@ class Math_Online(object):
                 num1 = str(int(num) + 1)
                 html = re.sub(num, num1, html, 1)
 
-        if isinstance(maxn, int) and maxn>0:
+        if isinstance(maxn, int) and maxn > 0:
             self._max = maxn
         else:
             maxn = self._max
@@ -223,8 +223,7 @@ class Math_Online(object):
         n_per_difficulty = int(maxn/5)
         for kk in range(5):
             data = self._data[test][kk]
-            self._write_html(data,n_per_difficulty,html, kk*n_per_difficulty)
-
+            self._write_html(data, n_per_difficulty, html, kk*n_per_difficulty)
 
     def _write_html(self, data=None, maxn=None, html=None, nstart=None):
         # select problems randomly if the number of problems is greater than 15
@@ -232,26 +231,26 @@ class Math_Online(object):
         if ndata <= maxn:
             nproblems = range(ndata)
         else:
-            nproblems = [random.randint(0,ndata-1) for p in range(0,maxn)]
+            nproblems = [random.randint(0, ndata-1) for p in range(0,maxn)]
 
         # generate the html file
         with open(html, 'a+') as fp:
             for kk, vv in enumerate(nproblems):
                 line = data[vv]
-                line0 = "<h2><span class=\"mw-headline\" id=\"%s\">%d: %s</span></h2>"%(line[0], 
-                    nstart+kk+1, line[0])
+                line0 = "<h2><span class=\"mw-headline\" id=\"%s\">%d: %s</span></h2>" % (
+                    line[0], nstart + kk + 1, line[0])
                 fp.write(line0)
                 fp.write(line[1])
                 fp.write(line[2])
                 fp.write("<p> </p>")
- 
+
 
 if __name__ == "__main__":
     csv = 'math_lib.csv'
     types = config.keys()
     print("Available tests: %s"%types)
-    test = raw_input('Please chhoose one[aime]: ') or 'aime'
-    num = raw_input('Please choose the number of problems in your test[15]: ') or '15'
+    test = input('Please chhoose one[aime]: ') or 'aime'
+    num = input('Please choose the number of problems in your test[15]: ') or '15'
     num = int(num)
     aa = Math_Online(lib=csv)
     if not os.path.exists(csv):
