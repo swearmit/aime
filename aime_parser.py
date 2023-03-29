@@ -21,7 +21,7 @@ class AIME_Parser(object):
         elif fname and isinstance(fname, basestring) and os.path.exists(fname):
             self._fname = open(fname,'r')
         else:
-            print "'fname' must be a file or a stream."
+            print("'fname' must be a file or a stream.")
 
         # update url if given
         if url and isinstance(url, basestring) and 'http' in url.lower():
@@ -63,7 +63,7 @@ class AIME_Parser(object):
 if __name__ == "__main__":
     aa = AIME_Parser('test.txt')
     bb = aa()
-    print bb
+    print(bb)
     with open('test0.html', 'w') as fp:
         for line in bb:
             fp.write(line[0])
