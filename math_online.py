@@ -1,4 +1,7 @@
 #!/usr/bin/python
+"""
+Module for math online
+"""
 import os
 import re
 import pickle
@@ -9,8 +12,11 @@ from StringIO import StringIO
 from aime_parser import AIME_Parser
 from math_cfg import config
 
-class Math_Online(object):
 
+class Math_Online(object):
+    """
+    Math Online
+    """
     def __init__(self, cfg=None, lib=None):
         self._cfg = None
 

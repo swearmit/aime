@@ -21,7 +21,7 @@ class AIME_Parser(object):
         if fname and isinstance(fname, StringIO):
             self._fname = fname
         elif fname and isinstance(fname, str) and os.path.exists(fname):
-            self._fname = open(fname,'r')
+            self._fname = open(fname, 'r')
         else:
             print("'fname' must be a file or a stream.")
 
@@ -40,28 +40,31 @@ class AIME_Parser(object):
                 # find problem start
                 if re.search('id=\"Problem.*\>Problem.*', line):
                     start = True
-                    #title = line
+                    # title = line
                     continue
 
                 # go to next line if current line is empty or not start
-                if not (line and start): continue
+                if not (line and start):
+                    continue
 
                 # fetch problems
                 if 'Solution' in line:
-                    answer = re.sub('/wiki', "%s/wiki"%self._url, line)
-                    title = re.search('title="(.*)"',line).group(1)
+                    answer = re.sub('/wiki', "%s/wiki" % self._url, line)
+                    title = re.search('title="(.*)"', line).group(1)
                     self._result.append([title, problem, answer])
-                    problem, answer, title = '','', ''
+                    problem, answer, title = '', '', ''
                     start = False
                 else:
                     if '//wiki-images.' in line:
                         line = re.sub('//wiki-images.', "https://wiki-images.", line)
                     if '/wiki/' in line:
-                        line = re.sub('/wiki/', "%s/wiki/"%self._url, line)
-                    problem += re.sub('src="//latex.','src="https://latex.',line)
+                        line = re.sub('/wiki/', "%s/wiki/" % self._url, line)
+                    problem += re.sub('src="//latex.', 'src="https://latex.', line)
 
 
         return self._result
+
+
 if __name__ == "__main__":
     aa = AIME_Parser('test.txt')
     bb = aa()
@@ -73,4 +76,5 @@ if __name__ == "__main__":
             fp.write(line[1])
             fp.write(line[2])
             fp.write("<p>")
-            fp.write("<p>")            
+            fp.write("<p>")
+
